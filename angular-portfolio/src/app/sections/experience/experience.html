@@ -1,6 +1,47 @@
-<section id="experience" class="py-24 bg-slate-45">
-    <div class="max-w-6xl mx-auto px-4">
-        <p class="text-xs uppercase tracking-wider">Experience</p>
-        <div class="h-32"></div>
+<section id="experience" class="bg-white">
+  <div class="max-w-6xl mx-auto px-4 py-24">
+    <!-- Section header -->
+    <div class="max-w-2xl">
+      <h2 class="text-3xl font-bold tracking-tight text-slate-900">
+        {{ heading }}
+      </h2>
+      <p class="mt-4 text-slate-600 leading-relaxed">
+        {{ description }}
+      </p>
     </div>
+
+    <!-- Timeline -->
+    <div class="mt-12">
+      <ol class="relative border-s border-slate-200">
+        <li
+          *ngFor="let item of items"
+          class="ms-6 pb-10 last:pb-0"
+        >
+          <!-- Dot -->
+          <span
+            class="absolute -start-1.5 mt-2 h-3 w-3 rounded-full bg-blue-600 ring-4 ring-white"
+          ></span>
+
+          <!-- Card -->
+          <article class="rounded-xl bg-slate-50 ring-1 ring-slate-200 p-6">
+            <div class="flex flex-wrap items-baseline justify-between gap-2">
+              <h3 class="text-lg font-semibold text-slate-900">
+                {{ item.role }}
+                <span class="text-slate-500 font-medium">· {{ item.company }}</span>
+              </h3>
+              <span class="text-xs font-medium text-slate-500">
+                {{ item.period }}
+              </span>
+            </div>
+
+            <ul class="mt-4 space-y-2 text-slate-700 leading-relaxed list-disc pl-5">
+              <li *ngFor="let h of item.highlights">
+                {{ h }}
+              </li>
+            </ul>
+          </article>
+        </li>
+      </ol>
+    </div>
+  </div>
 </section>

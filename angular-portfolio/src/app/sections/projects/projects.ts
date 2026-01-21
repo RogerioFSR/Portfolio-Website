@@ -27,7 +27,7 @@ export class Projects {
         'Description',
       tags: ['Angular', 'TypeScript', 'Tailwind'],
       repoUrl: 'https://github.com/RogerioFSR/Portfolio-Website',
-      liveUrl: ''
+      liveUrl: 'https://github.com/RogerioFSR/Portfolio-Website'
     },
     {
       title: 'Personal Portfolio Website',

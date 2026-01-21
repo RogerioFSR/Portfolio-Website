@@ -35,15 +35,21 @@
         </div>
 
         <!-- Links -->
-        <div class="mt-6 flex items-center gap-4 text-sm font-semibold">
+        <div class="mt-6 flex items-center gap-1 text-sm font-semibold">
           <a
             *ngIf="p.repoUrl"
             [href]="p.repoUrl"
             target="_blank"
             rel="noreferrer"
-            class="text-slate-700 hover:text-blue-600 transition-colors"
+            aria-label="GitHub Repository"
+            class="inline-flex items-center rounded-md p-1 hover:bg-slate-100 transition border border-slate-300 p-2 gap-2"
           >
-            GitHub
+          <img
+            src="icons/github.svg"
+            alt="GitHub Icon"
+            class="h-5 w-5 opacity-70 hover:opacity-100 transition"
+          />
+          GitHub
           </a>
 
           <a
@@ -51,9 +57,15 @@
             [href]="p.liveUrl"
             target="_blank"
             rel="noreferrer"
-            class="text-slate-700 hover:text-blue-600 transition-colors"
+            aria-label="Visit Live Project"
+            class="inline-flex items-center rounded-md p-1 hover:bg-slate-100 transition border border-slate-300 p-2 gap-1"
           >
-            Live
+          <img
+            src="icons/external.png"
+            alt=""
+            class="h-5 w-5 opacity-70 hover:opacity-100 transition"
+          />
+          Visit
           </a>
         </div>
       </article>

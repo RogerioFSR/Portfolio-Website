@@ -1,6 +1,39 @@
-<section id="contact" class="py-24 bg-slate-45">
-    <div class="max-w-6xl mx-auto px-4">
-        <p class="text-xs uppercase tracking-wider">Contact</p>
-        <div class="h-32"></div>
+<section id="contact" class="bg-white">
+  <div class="max-w-6xl mx-auto px-4 py-24">
+    <!-- Section header -->
+    <div class="max-w-2xl">
+      <h2 class="text-3xl font-bold tracking-tight text-slate-900">
+        {{ heading }}
+      </h2>
+      <p class="mt-4 text-slate-600 leading-relaxed">
+        {{ description }}
+      </p>
     </div>
+
+    <!-- Contact cards -->
+    <div class="mt-12 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-2">
+      <a
+        *ngFor="let c of items"
+        [href]="c.href"
+        target="_blank"
+        rel="noreferrer"
+        class="group rounded-xl border border-slate-200 bg-slate-50 p-6 hover:bg-white hover:shadow-sm transition"
+      >
+        <div class="flex items-start gap-4">
+          <div class="rounded-md border border-slate-200 bg-white p-2">
+            <img [src]="c.iconSrc" alt="" class="h-5 w-5 opacity-80" />
+          </div>
+
+          <div class="min-w-0">
+            <div class="text-sm font-semibold text-slate-900">
+              {{ c.label }}
+            </div>
+            <div class="mt-1 text-sm text-slate-600 truncate">
+              {{ c.value }}
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
 </section>

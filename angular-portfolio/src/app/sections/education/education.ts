@@ -21,15 +21,15 @@ export class Education {
   readonly items: EducationEntry[] = [
     {
       degree: 'Bachelor',
-      institution: 'University A',
-      period: '2000 - 2000',
-      details: 'Something'
+      institution: 'Faculdade de Engenharia da Universidade do Porto',
+      period: '2018 - 2022',
+      details: 'Software and Computing Engineering'
     },
     {
       degree: 'Master',
-      institution: 'University B',
-      period: '2000 - 2000',
-      details: 'Something'
+      institution: 'Faculdade de Ciências da Universidade do Porto',
+      period: '2022 - 2025',
+      details: 'Networks and Informatic Systems Engineering'
     }
   ]
 }

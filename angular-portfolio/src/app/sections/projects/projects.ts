@@ -46,7 +46,7 @@ export class Projects {
 
   readonly items: Project[] = [
     {
-      title: 'Thesis: Classification of Youtube Videos using Textual Information in the Portuguese Language',
+      title: 'Thesis - Classification of Youtube Videos using Textual Information in the Portuguese Language',
       description:
         'The final project for my Master\'s degree, which involved building a machine learning model to classify Youtube videos based on their transcripts. Paper will be made available soon.',
       tags: ['Python', 'Machine Learning', 'Data','HuggingFace'],

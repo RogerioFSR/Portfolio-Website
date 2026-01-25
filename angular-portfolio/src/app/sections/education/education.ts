@@ -29,7 +29,7 @@ export class Education {
       degree: 'Master\'s',
       institution: 'Faculdade de Ciências da Universidade do Porto',
       period: '2022 - 2025',
-      details: 'Networks and Informatic Systems Engineering'
+      details: 'Network and Informatic Systems Engineering'
     }
   ]
 }

@@ -20,13 +20,13 @@ export class Education {
 
   readonly items: EducationEntry[] = [
     {
-      degree: 'Bachelor',
+      degree: 'Bachelor\'s',
       institution: 'Faculdade de Engenharia da Universidade do Porto',
       period: '2018 - 2022',
       details: 'Software and Computing Engineering'
     },
     {
-      degree: 'Master',
+      degree: 'Master\'s',
       institution: 'Faculdade de Ciências da Universidade do Porto',
       period: '2022 - 2025',
       details: 'Networks and Informatic Systems Engineering'
